@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
         verticalScreenSize = 6.5f;
         Instantiate(playerPrefab, transform.position, Quaternion.identity);
         CreateSky();
-        score = 0;
         InvokeRepeating("CreateEnemy", 1, 3);
     }
 
