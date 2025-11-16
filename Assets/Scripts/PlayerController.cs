@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public int lives;
+    public int score;
     private float speed;
 
     private GameManager gameManager;
@@ -23,6 +24,8 @@ public class PlayerController : MonoBehaviour
         lives = 3;
         speed = 5.0f;
         gameManager.ChangeLivesText(lives);
+        score = 0;
+        gameManager.ChangeScoreText(score);
     }
 
     // Update is called once per frame
